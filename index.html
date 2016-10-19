@@ -1,23 +1,3 @@
-<?php
-$thankshow = "none";
-$formshow = "block";
-require 'include/MailChimp.php';
-if ($_POST['subscribe']) {
-$MailChimp = new \Drewm\MailChimp('73bb603c1db862353cada64d88442759-us11');
-$email_val = $_REQUEST['EMAIL'];
-$result = $MailChimp->call('lists/subscribe', array(
-                'id'                => '99a68bacad',
-                'email'             => array('email'=>$email_val),
-                'double_optin'      => false,
-                'update_existing'   => true,
-                'replace_interests' => false,
-                'send_welcome'      => false,
-            ));
-//print_r($result);
-$thankshow = "block";
-$formshow = "none";
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -67,22 +47,9 @@ $formshow = "none";
                 <div id="save" class="alert alert-success" style="display:<?php echo $thankshow; ?>;">
                     <strong>Ďakujeme za Váš záujem!</strong>
                 </div>
-                <!-- Begin MailChimp Signup Form -->
-<div id="formular" style="display:<?php echo $formshow; ?>;">
-<form action="index.php" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
-    <div id="mc_embed_signup_scroll">
-	
-	<input type="email" placeholder="Zadajte Váš e-mail, ak sa chcete dozvedieť viac" name="EMAIL" class="email" placeholder="email address" required width="400px">
-    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    <div style="position: absolute; left: -5000px;"><input type="text" name="b_628751867f8f330d5bc4da16a_99a68bacad" tabindex="-1" value=""></div>
-    <div class="clear"><input type="submit" value="Odoslať" name="subscribe" class="button"></div>
-    </div>
-</form>
-</div>
 
-<!--End mc_embed_signup-->
            
-                <div class="anti-spam">info (at) vyskum.eu</br>2015</div>
+                <div class="anti-spam">info (at) vyskum.eu<br/>2015</div>
             </div>
         
         </div>
@@ -90,9 +57,6 @@ $formshow = "none";
 
     </div>
     <!-- /.container -->
-
-    <!-- jQuery Version 1.11.1 -->
-    <script src="js/jquery.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
