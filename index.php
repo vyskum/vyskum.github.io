@@ -60,7 +60,7 @@ $formshow = "none";
 
         <div class="row">
             <div class="col-lg-12 text-center">
-            <img alt="Logo" width="400" src="img/logo.png" />
+            <img alt="Logo" width="400" src="img/vyskum.png" />
             </div>
             <div class="col-lg-8 col-lg-offset-2 text-center">
                  <h4 class="secondary-text">Užitočné nástroje pre Váš vedecký výskum už čoskoro!</h4> 
@@ -72,7 +72,7 @@ $formshow = "none";
 <form action="index.php" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
     <div id="mc_embed_signup_scroll">
 	
-	<input type="email" placeholder="Zadajte Váš e-mail, ak chcete byť informovaný o spustení stránky" name="EMAIL" class="email" placeholder="email address" required width="400px">
+	<input type="email" placeholder="Zadajte Váš e-mail, ak sa chcete dozvedieť viac" name="EMAIL" class="email" placeholder="email address" required width="400px">
     <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
     <div style="position: absolute; left: -5000px;"><input type="text" name="b_628751867f8f330d5bc4da16a_99a68bacad" tabindex="-1" value=""></div>
     <div class="clear"><input type="submit" value="Odoslať" name="subscribe" class="button"></div>
