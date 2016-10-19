@@ -1,0 +1,47 @@
+body{background-color:#FFFFFF;
+     padding-top: 30px;
+}
+.header-text{font-family:"Ubuntu", Arial, sans-serif;font-size:40px;color:#090909;}
+.secondary-text{font-family:"Ubuntu", Arial, sans-serif;font-size:24px;color:#090909;}
+.anti-spam{font-family:"Ubuntu", Arial, sans-serif;font-size:13px;color:#BBBBBB;padding-top:20px;}
+.content{max-width:600px;margin-left:auto;margin-right:auto;text-align:center;}
+.content input{text-align:center;}
+
+    
+input[type="email"],
+input[type="submit"] {
+	font-family: 'Ubuntu', Arial, sans-serif;
+	background: transparent;
+	border: 1px solid #eeeeee;
+	padding: 8px 10px;
+	width: 70%;
+	font-size: 14px;
+	line-height: 1.8;
+    text-align:center;
+	-webkit-transition: all ease-in-out 0.2s;
+	-moz-transition: all ease-in-out 0.2s;
+	-o-transition: all ease-in-out 0.2s;
+	transition: all ease-in-out 0.2s;
+}
+input[type="email"]:focus,
+input[type="email"]:active {
+	outline: none;
+}
+
+/* Buttons */
+
+input[type="submit"] {
+	background: #0f0f0f;
+	border-color: #0f0f0f;
+	color: #ffffff;
+	font-size: 12px;
+	padding: 8px 20px;
+	margin-top: 10px;
+	width: auto;
+	cursor: pointer;
+}
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+	background: #0a0a0a;
+	border-color: #0a0a0a;
+}
